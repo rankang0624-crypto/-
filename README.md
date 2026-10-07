@@ -4,18 +4,23 @@
 装，并完成 OpenCV 的安装与配置
 二、实验内容
 1、Anaconda的安装及配置
-较为简单，不再进行阐述。演示如下：
+较为简单，不再进行阐述。演示如下：<img width="1483" height="741" alt="289fc189358cf3531d394a4a39b3b04d" src="https://github.com/user-attachments/assets/8d14fb9a-cdc5-438a-bd89-e0c48780479b" />
+
 2、conda的基本操作与OpenCV的安装
 1.  conda create -n [env_name] python==[version] 创建虚拟环境并制定python版本。
 2.  activate cv 进入创建的虚拟环境， pip install opencv-python 安装OpenCV。演示如
-下：
+下：<img width="1532" height="742" alt="a5b897776faf64a26480baa988ca0444" src="https://github.com/user-attachments/assets/04d67334-3bf2-4c26-87fc-0de8ed30f125" />
+
 3、GPU加速环境配置
-1.  nvidia-smi 显示显卡状态信息，如下：
+1.  nvidia-smi 显示显卡状态信息，如下：<img width="1472" height="746" alt="3e59337d6b6c5d9e8fa0fb10d8ed8d89" src="https://github.com/user-attachments/assets/5d82641d-ffcf-461e-a726-428cf2be7644" />
+
 2. 在NVIDIA官网下载对应版本的CUDA Toolkit及cuDNN并安装，这里不在进行演示。以
 下为验证CUDA是否安装成功（cuDNN不能单独运行，后面结合Pytorch验证，这里不做
-验证）：
+验证）：<img width="1772" height="685" alt="866e16af7c1e54e97c03e9f8a6ce9158" src="https://github.com/user-attachments/assets/08ef66e2-e507-4ef5-9b45-a6be238f8511" />
+
 4、PyTorch安装
-1. 结合CUDA版本至PyTorch官网选择对应版本进行下载，页面如下：
+1. 结合CUDA版本至PyTorch官网选择对应版本进行下载，页面如下：<img width="1184" height="550" alt="b89652f89811019342e2bafbd44755b7" src="https://github.com/user-attachments/assets/f617c7e6-ad15-4cce-9b6d-953bf64543dd" />
+
 2.  conda list pytorch 可以看到已经成功安装，信息如下：
 5、PyTorch GPU加速环境验证
 torch.cuda.is_available() 、 torch.backends.cudnn.is_available() 结果进行验证，
